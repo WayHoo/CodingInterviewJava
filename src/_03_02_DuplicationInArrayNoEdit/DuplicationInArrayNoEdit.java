@@ -1,8 +1,10 @@
+package _03_02_DuplicationInArrayNoEdit;
+
 /**
  * @author huwei
  * @date 2020/5/30 19:12
  */
-public class _03_02_DuplicationInArrayNoEdit {
+public class DuplicationInArrayNoEdit {
     public static void main(String[] args) {
         int[] nums = {2, 3, 5, 4, 3, 2, 6, 7};
         System.out.println(getDuplication(nums));

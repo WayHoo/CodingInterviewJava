@@ -1,9 +1,10 @@
+package _03_01_DuplicationInArray;
+
 /**
  * @author huwei
  * @date 2020/5/30 16:05
  */
-
-public class _03_01_DuplicationInArray {
+public class DuplicationInArray {
 
     public static void main(String[] args) {
         int[] nums = {2, 3, 1, 0, 2, 5, 3};

@@ -1,20 +1,22 @@
+package _07_ConstructBinaryTree;
+
 /**
  * @author huwei
  * @date 2020/5/31 18:30
  */
-public class _07_ConstructBinaryTree {
+public class ConstructBinaryTree {
 
     public static void main(String[] args) {
         int[] preorder = {1, 2, 4, 7, 3, 5, 6, 8};
         int[] inorder = {4, 7, 2, 1, 5, 3, 8, 6};
-        TreeNode head = buildTree(preorder, inorder);
-        postOrderPrint(head);
+        TreeNode root = buildTree(preorder, inorder);
+        postOrderPrint(root);
     }
 
     public static TreeNode buildTree(int[] preorder, int[] inorder) {
         if( preorder == null || preorder.length == 0 )
             return null;
-        TreeNode head = buildNode(preorder, 0, preorder.length - 1,
+        TreeNode head = buildTree(preorder, 0, preorder.length - 1,
                 inorder, 0, inorder.length - 1);
         return head;
     }
@@ -29,21 +31,21 @@ public class _07_ConstructBinaryTree {
      * @param inRight - 子树在中序遍历数组中对应的终止下标（包含）
      * @return 使用preorder[preLeft]值构建的TreeNode结点引用
      */
-    public static TreeNode buildNode(int[] preorder, int preLeft, int preRight,
+    public static TreeNode buildTree(int[] preorder, int preLeft, int preRight,
                                      int[] inorder, int inLeft, int inRight) {
         if( inLeft > inRight )
             return null;
-        TreeNode node = new TreeNode(preorder[preLeft]);
+        TreeNode root = new TreeNode(preorder[preLeft]);
         for (int i = inLeft; i <= inRight ; i++) {
             if( inorder[i] == preorder[preLeft] ){
-                node.left = buildNode(preorder, preLeft + 1, preLeft + i - inLeft,
+                root.left = buildTree(preorder, preLeft + 1, preLeft + i - inLeft,
                         inorder, inLeft, i - 1);
-                node.right = buildNode(preorder, preLeft + i - inLeft + 1, preRight,
+                root.right = buildTree(preorder, preLeft + i - inLeft + 1, preRight,
                         inorder, i + 1, inRight);
                 break;
             }
         }
-        return node;
+        return root;
     }
 
     /**

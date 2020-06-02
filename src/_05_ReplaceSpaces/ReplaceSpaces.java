@@ -1,8 +1,10 @@
+package _05_ReplaceSpaces;
+
 /**
  * @author huwei
  * @date 2020/5/31 15:34
  */
-public class _05_ReplaceSpaces {
+public class ReplaceSpaces {
 
     public static void main(String[] args) {
         String s = "We are happy.";

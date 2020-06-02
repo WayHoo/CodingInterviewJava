@@ -1,3 +1,5 @@
+package _06_PrintListInReversedOrder;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -5,7 +7,7 @@ import java.util.List;
  * @author huwei
  * @date 2020/5/31 16:23
  */
-public class _06_PrintListInReversedOrder {
+public class PrintListInReversedOrder {
 
     public static void main(String[] args) {
         ListNode head = new ListNode(10);

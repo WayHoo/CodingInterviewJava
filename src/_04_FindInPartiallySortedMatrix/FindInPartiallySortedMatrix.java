@@ -1,8 +1,10 @@
+package _04_FindInPartiallySortedMatrix;
+
 /**
  * @author huwei
  * @date 2020/5/30 22:38
  */
-public class _04_FindInPartiallySortedMatrix {
+public class FindInPartiallySortedMatrix {
 
     public static void main(String[] args) {
         int[][] matrix = {
