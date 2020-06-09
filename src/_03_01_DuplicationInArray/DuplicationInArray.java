@@ -3,6 +3,7 @@ package _03_01_DuplicationInArray;
 /**
  * @author huwei
  * @date 2020/5/30 16:05
+ * @leecode https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/
  */
 public class DuplicationInArray {
 

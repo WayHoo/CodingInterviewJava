@@ -3,6 +3,7 @@ package _10_Fibonacci;
 /**
  * @author huwei
  * @date 2020/6/3 0:30
+ * @leetcode https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/
  */
 public class Fibonacci {
 
@@ -10,10 +11,14 @@ public class Fibonacci {
         System.out.println(fib(95));
     }
 
+
+    /**
+     * 时间复杂度O(n)，空间复杂度O(1)
+     */
     public static int fib(int n) {
-        if( n == 0 )
+        if (n == 0)
             return 0;
-        if( n == 1 )
+        if (n == 1)
             return 1;
         //尽管 n <= 100，使用long存储真实fib值依然会溢出
         int last_1 = 1, last_2 = 0;

@@ -5,6 +5,7 @@ import java.util.Stack;
 /**
  * @author huwei
  * @date 2020/6/2 23:52
+ * @leecode https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/
  */
 public class QueueWithTwoStacks {
 

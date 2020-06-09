@@ -6,6 +6,7 @@ import java.util.List;
 /**
  * @author huwei
  * @date 2020/5/31 16:23
+ * @leecode https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/
  */
 public class PrintListInReversedOrder {
 
